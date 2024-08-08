@@ -2,32 +2,62 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.button {
+  background: linear-gradient(90deg, #2253ff 1.46%, #1744e1 99.81%);
+  border: 1px solid #fff;
+  border-radius: 71px;
+  box-shadow: 0 2px 72.7px #0f2368bd;
+  color: #fff;
+  display: inline-flex;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 500;
+  height: 80px;
+  margin-top: 36px;
+  max-width: 471px;
+  position: relative;
+  z-index: 3;
+  width: 100%;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
+.button::after {
   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    90deg,
+    #2253ff 1.46%,
+    #3a66ff82 50.8%,
+    #2253ff 99.81%
+  );
+  border-radius: 71px;
+  filter: blur(20px);
+  height: calc(100% + 50px);
+  transition: all 0.25s ease;
+  -webkit-transition: all 0.25s ease;
+  width: calc(100% + 50px);
+  z-index: 1;
+  content: "";
+  display: block;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.button::before {
+  background: linear-gradient(
+    90deg,
+    #2253ff 1.46%,
+    #3a66ff00 50.8%,
+    #2253ff 99.81%
+  );
+  border: 2px solid #2252fd;
+  border-radius: 71px;
+  height: calc(100% + 32px);
+  width: calc(100% + 32px);
+  z-index: 2;
+  content: "";
+  display: block;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
