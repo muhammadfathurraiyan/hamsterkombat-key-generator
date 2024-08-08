@@ -8,3 +8,7 @@ Get free unlimited promo codes for four different games on Hamster Kombat playgr
 - Tailwind
 
 visit: https://hamsterkombat-keygen.vercel.app
+
+## Responsibility
+
+This is for educational purposes only. The author does not bear the responsibility of the consequences of use by other users
