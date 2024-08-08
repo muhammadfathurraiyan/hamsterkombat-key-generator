@@ -39,9 +39,9 @@ export default function Header() {
         </div>
       </div>
       <div className="lg:flex hidden items-center w-[250px]">
-        <Button className="w-full gap-6">
+        <Link href={"https://linktr.ee/muhammadfathurraiyan"} target="_blank" className={`${buttonClass.default} w-full gap-6`}>
           Support us! <PiCoffee size={32} />
-        </Button>
+        </Link>
       </div>
       <div className="flex items-center justify-between lg:hidden w-full">
         <div className="flex items-center">
