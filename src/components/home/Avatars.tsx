@@ -7,6 +7,7 @@ export default function Avatars() {
     { id: 2, src: "/img/mca.png", alt: "My Clone Army" },
     { id: 3, src: "/img/r3d.png", alt: "Riding Extreme 3D" },
     { id: 4, src: "/img/tm.png", alt: "Train Miner" },
+    { id: 5, src: "/img/ma.png", alt: "Merge Away!" },
   ];
   return (
     <div className="flex -space-x-6 my-2">

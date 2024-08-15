@@ -13,7 +13,7 @@ export default function page() {
         Kombat playground.
       </p>
       <p className="text-2xl max-lg:text-lg text-foreground/80 max-lg:hidden text-center">
-        Riding Extreme 3D, Chain Cube 2048, My Clone Army, and Train Miner
+        Riding Extreme 3D, Chain Cube 2048, My Clone Army, Train Miner and Merge Away!
       </p>
       <div className="mt-8 w-full flex items-center justify-center max-lg:px-4">
         <Link href={"/generator"} className="button">
