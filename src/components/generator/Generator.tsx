@@ -125,6 +125,7 @@ export default function Generator() {
           const id = parseInt(key);
           return (
             <Card
+              key={id}
               action={handleGenerateKeys}
               id={id}
               title={games[id].name}
