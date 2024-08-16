@@ -1,7 +1,9 @@
 import Avatars from "@/components/home/Avatars";
+import { games } from "@/lib/data";
 import Link from "next/link";
 
 export default function page() {
+  const title = Object.keys(games).map((id) => games[parseInt(id)].name);
   return (
     <section className="flex flex-col items-center gap-4 py-6">
       <h1 className="font-bold text-[80px] max-lg:text-5xl leading-none text-center">
@@ -13,7 +15,7 @@ export default function page() {
         Kombat playground.
       </p>
       <p className="text-2xl max-lg:text-lg text-foreground/80 max-lg:hidden text-center">
-        Riding Extreme 3D, Chain Cube 2048, My Clone Army, Train Miner and Merge Away!
+        {title.join(", ")}
       </p>
       <div className="mt-8 w-full flex items-center justify-center max-lg:px-4">
         <Link href={"/generator"} className="button">
