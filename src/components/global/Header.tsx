@@ -11,19 +11,28 @@ export default function Header() {
     <header className="flex max-lg:flex-col items-center justify-between gap-y-4">
       <div className="lg:flex hidden items-center w-[250px]">
         <div className="rounded-full flex items-center w-full p-2 border border-border gap-2">
-          <Link href={"https://x.com/mfraiyan"} target="_blank" className={buttonClass.icon}>
+          <Link
+            href={"https://x.com/mfraiyan"}
+            target="_blank"
+            className={buttonClass.icon}
+          >
             <FaXTwitter size={32} />
           </Link>
-          <Link href={"https://t.me/pengaruhbesar"} target="_blank" className={buttonClass.icon}>
+          <Link
+            href={"https://t.me/pengaruhbesar"}
+            target="_blank"
+            className={buttonClass.icon}
+          >
             <FaTelegramPlane size={32} />
           </Link>
-          <p className="text-xl font-medium  text-foreground/50">
-            Contact us!
-          </p>
+          <p className="text-xl font-medium  text-foreground/50">Contact us!</p>
         </div>
       </div>
       <div className="flex justify-center items-center max-lg:w-full">
-        <div className="flex items-center justify-center max-lg:w-full gap-5 max-lg:gap-2 px-12 max-lg:py-2 py-5 border-8 max-lg:border-2 max-lg:border-t-0 border-t-0 rounded-b-[92px] max-lg:rounded-b-[52px] border-border">
+        <Link
+          href={"/"}
+          className="flex items-center justify-center max-lg:w-full gap-5 max-lg:gap-2 px-12 max-lg:py-2 py-5 border-8 max-lg:border-2 max-lg:border-t-0 border-t-0 rounded-b-[92px] max-lg:rounded-b-[52px] border-border"
+        >
           <div className="rounded-full bg-border/50 p-2 max-lg:p-1">
             <Image
               alt={"hamster kombat logo"}
@@ -36,10 +45,14 @@ export default function Header() {
           <h1 className="text-[32px] max-lg:text-[26px] font-medium">
             Hamster Kombat
           </h1>
-        </div>
+        </Link>
       </div>
       <div className="lg:flex hidden items-center w-[250px]">
-        <Link href={"https://linktr.ee/muhammadfathurraiyan"} target="_blank" className={`${buttonClass.default} w-full gap-6`}>
+        <Link
+          href={"https://linktr.ee/muhammadfathurraiyan"}
+          target="_blank"
+          className={`${buttonClass.default} w-full gap-6`}
+        >
           Support us! <PiCoffee size={32} />
         </Link>
       </div>

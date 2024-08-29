@@ -49,7 +49,7 @@ export default function Generator() {
       for (let i = 0; i < keyCount; i++) {
         const clientId = generateClientId();
         const clientToken = await login(clientId, game.appToken);
-        for (let attempt = 0; attempt < 11; attempt++) {
+        for (let attempt = 0; attempt < game.attemptsNumber; attempt++) {
           if (!isGenerate) {
             setIsGenerate(true);
             setGameTitle(game.name);
@@ -59,7 +59,9 @@ export default function Generator() {
           );
           const hasCode = await emulateProgress(clientToken, game.promoId);
           if (hasCode) break;
-          await new Promise((resolve) => setTimeout(resolve, EVENTS_DELAY));
+          await new Promise((resolve) =>
+            setTimeout(resolve, game.eventsDelay * (Math.random() / 3 + 1))
+          );
         }
 
         const key = await generateKey(clientToken, game.promoId);
