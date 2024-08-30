@@ -1,6 +1,6 @@
 # This is hamster kombat key generator
 
-Get free unlimited promo codes for 9 different games on Hamster Kombat playground.
+Get free unlimited promo codes for all games on Hamster Kombat playground.
 
 ## Tech stack:
 

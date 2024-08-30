@@ -70,7 +70,7 @@ export const games: TGames = {
     appToken: "2aaf5aee-2cbc-47ec-8a3f-0962cc14bc71",
     promoId: "2aaf5aee-2cbc-47ec-8a3f-0962cc14bc71",
     eventsDelay: 20000,
-    attemptsNumber: 16,
+    attemptsNumber: 20,
     img: "/img/p.png",
   },
   8: {
@@ -88,5 +88,29 @@ export const games: TGames = {
     eventsDelay: 21000,
     attemptsNumber: 15,
     img: "/img/mr.png",
+  },
+  10: {
+    name: "My Clone Army",
+    appToken: "74ee0b5b-775e-4bee-974f-63e7f4d5bacb",
+    promoId: "fe693b26-b342-4159-8808-15e3ff7f8767",
+    eventsDelay: 180000,
+    attemptsNumber: 30,
+    img: "/img/mca.png",
+  },
+  11: {
+    name: "Zoopolis",
+    appToken: "b2436c89-e0aa-4aed-8046-9b0515e1c46b",
+    promoId: "b2436c89-e0aa-4aed-8046-9b0515e1c46b",
+    eventsDelay: 20000,
+    attemptsNumber: 20,
+    img: "/img/z.png",
+  },
+  12: {
+    name: "Gangs Wars",
+    appToken: "b6de60a0-e030-48bb-a551-548372493523",
+    promoId: "c7821fa7-6632-482c-9635-2bd5798585f9",
+    eventsDelay: 40000,
+    attemptsNumber: 30,
+    img: "/img/gw.png",
   },
 };
